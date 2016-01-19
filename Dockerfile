@@ -20,6 +20,9 @@ RUN curl -o /usr/local/bin/gosu -SL "https://github.com/tianon/gosu/releases/dow
 # gpg: key 7F0CEB10: public key "Richard Kreuter <richard@10gen.com>" imported
 RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 492EAFE8CD016A07919F1D2B9ECBEC467F0CEB10
 
+# Mongodb key
+RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv EA312927
+
 ENV MONGO_MAJOR 3.2
 ENV MONGO_VERSION 3.2.1
 
