@@ -1,6 +1,7 @@
 # docker-mongod
 
-Docker image that support external data folder
+Docker image for mongodb that support external data folder.
+
 
 ## Sample usage in docker_compose.yml
 ```yaml
